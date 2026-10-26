@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSync | Search</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">Skill<span>Sync</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="search.html">Search</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-heading">
+      <p class="eyebrow">DISCOVER YOUR NEXT PARTNER</p>
+      <h1>Find your people.</h1>
+      <p>Search by a student's name or by a skill you want to learn.</p>
+    </section>
+
+    <section class="search-area">
+      <label for="skillSearch">Search students</label>
+      <input id="skillSearch" type="search" placeholder="Try Python, design, Rahul..." autocomplete="off">
+      <p class="hint">Try searching for a skill such as Python, SQL, or Graphic Design.</p>
+    </section>
+
+    <section class="results-section">
+      <div class="results-heading">
+        <h2>Students</h2>
+        <span id="resultCount" class="result-count"></span>
+      </div>
+      <div id="studentList" class="student-grid" aria-live="polite"></div>
+      <p id="emptyState" class="empty-state" hidden>No students found. Try another name or skill.</p>
+    </section>
+  </main>
+
+  <footer>SkillSync <span>·</span> Learn, Share &amp; Grow</footer>
+</body>
+</html>
